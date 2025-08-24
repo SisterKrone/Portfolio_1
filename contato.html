@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Portfólio Website</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Luís</a>
+        <i id="menu-icon" class="fas fa-bars"></i> <!-- ícone do menu -->
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="#">Projetos</a>
+            <a href="#">Skills</a>
+            <a href="#">Formação</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+
+    </header>
+
+    <section class="contato">
+        <div class="contato-img">
+            <img src="contato.jpeg" alt="Imagem do meu rosto">
+        </div>
+        <div class="contato-content">
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Nome" />
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Assunto"></textarea>
+                <input type="submit" value="Enviar" />
+            </form>
+
+
+
+
+        </div>
+
+    </section>
+
+    <script>
+        const menuIcon = document.querySelector("#menu-icon");
+        const nav = document.querySelector("nav");
+
+        menuIcon.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+
+</body>
+
+</html>

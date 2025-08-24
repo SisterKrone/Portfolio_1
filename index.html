@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Website</title>
+</head>
+
+<body>
+    <header>
+
+
+
+        <a href="#" class="logo">Luís</a>
+        <i id="menu-icon" class="fas fa-bars"></i> <!-- ícone do menu -->
+        <nav>
+            <a href="index.html" class="active">Principal</a>
+            <a href="#">Projetos</a>
+            <a href="#">Skills</a>
+            <a href="#">Formação</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+
+
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpeg" alt="Imagem do meu rosto">
+        </div>
+        <div class="home-content">
+            <h1>Oi, eu sou o <span>Luís</span>!</h1>
+            <h3 class="typing-text">Um <span></span></h3>
+            <p>Sou programador fullstack, com experiência em HTML, CSS, JavaScript, React, C#/.NET e SQL, sempre
+                em busca de evolução contínua. Tenho perfil proativo e colaborativo,
+                e meu foco é criar soluções tecnológicas que sejam eficientes, escaláveis e que gerem valor real.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/luís-cláudio-54a15414a" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SisterKrone" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="contato.html" class="btn">Me contrate!</a>
+        </div>
+
+    </section>
+
+    <script>
+        const menuIcon = document.querySelector("#menu-icon");
+        const nav = document.querySelector("nav");
+
+        menuIcon.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
